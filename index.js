@@ -11,5 +11,7 @@ app.get('/', (req, res) => res.json({response: "index route"}));
 
 app.get('/playlists/:id', (req, res) => res.json({response: "specific playlist"}));     //sagi
 app.get('/playlists', (req, res) => res.json({response: "all playlists"}));     //maayan
+app.delete('/playlists/:id', (req, res) => res.json({response: "Delete specific playlist"}));     //adi
+
     
 app.listen(port, () => console.log(`Listening on port ${port}`));
