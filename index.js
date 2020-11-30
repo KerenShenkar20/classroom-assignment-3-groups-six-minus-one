@@ -9,6 +9,6 @@ app.get('/', (req, res) => res.json({response: "index route"}));
     Student A writes the route for GET /playlist
     and student B writes the route for PUT /language */
 
-app.get('/playlist/:id', (req, res) => res.json({response: "specific playlist"}));
+app.get('/playlists/:id', (req, res) => res.json({response: "specific playlist"}));
     
 app.listen(port, () => console.log(`Listening on port ${port}`));
