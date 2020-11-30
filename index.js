@@ -9,6 +9,7 @@ app.get('/', (req, res) => res.json({response: "index route"}));
     Student A writes the route for GET /playlist
     and student B writes the route for PUT /language */
 
-app.get('/playlists/:id', (req, res) => res.json({response: "specific playlist"}));
+app.get('/playlists/:id', (req, res) => res.json({response: "specific playlist"}));     //sagi
+app.get('/playlists', (req, res) => res.json({response: "all playlists"}));     //maayan
     
 app.listen(port, () => console.log(`Listening on port ${port}`));
